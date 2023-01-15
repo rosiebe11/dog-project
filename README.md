@@ -44,6 +44,8 @@ Although it was not possible in this project, the accuracy could have been impro
 1. Increasing the training dataset
 2. Augmenting the training data.
 
+A blog post has been written detailing the journey of this notebook. To read, head to https://medium.com/@rosiebell27/what-dog-is-that-creating-a-dog-breed-classifier-using-deep-learning-bbf87533143b
+
 If you would like to run this notebook, follow the instructions below.
 
 ## Project Instructions
