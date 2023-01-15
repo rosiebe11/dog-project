@@ -7,11 +7,44 @@
 
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! The overall aim of this project is to create a CNN that when given an image of a dog, the algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
 
 ![Sample Output][image1]
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+Along with exploring state-of-the-art CNN models for classification, the notebook will walk through important design decisions about the user experience for the classifier. The notebook looks at multiple approaches to show the strenghs and weakness of different CNNS and gain a better understanding of the data. 
+
+### Libraries used in the project
+Keras
+Matplotlib
+NumPy
+OpenCV
+
+### File descriptions
+- dog_app.ipynb: Jupyter notebook containing implementation of CNN to classify breeds of dogs
+- dog_app.html: Jupyter notebook rendered in html format
+- weights.best.from_scratch.hdf5, weights.best.VGG16.hdf5, weights.best.VGG10.hdf5: Weight of CNN model build from scratch, and CNN model via transfer learning utilizing VGG16 and VGG19 architecture
+- /images folder: contains images used to test the model.
+
+### Findings
+The final architecture used transfer learning and VGG19 pre-trained model to achieve an accuracy of approx 80%. 
+
+### Conclusion
+The capstone project walks through the implementation of a CNN network. The steps taken to improve our understanding of similar neural networks and ultimately build the final CNN are detailed below:
+1. Import dataset
+2. Detect human faces in images 
+3. Detect dog in images 
+4. Create CNN to classify dog breeds from scratch
+5. Use CNN to classify dog breeds via transfer learning 
+6. Create CNN to classify dog breeds via transfer learning 
+7. Write an algorithm to predict breeds using real world images
+
+It was shown that training effective CNNs take a lot of time to train the model. In these cases, using transfer learning of pre-trained models and altering the final architecture slightly at the end is an effective way of overcoming this. A good accuracy can be achieved using this method. 
+
+Although it was not possible in this project, the accuracy could have been improved further through
+1. Increasing the training dataset
+2. Augmenting the training data.
+
+If you would like to run this notebook, follow the instructions below.
 
 ## Project Instructions
 
@@ -27,7 +60,7 @@ cd dog-project
 
 3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 
-4. Download the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
+4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
 
 5. (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
 
@@ -114,8 +147,3 @@ When you are ready to submit your project, collect the following files and compr
 - Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
 
 Alternatively, your submission could consist of the GitHub link to your repository.
-
- # Archival Note 
- This repository is deprecated; therefore, we are going to archive it. However, learners will be able to fork it to their personal Github account but cannot submit PRs to this repository. If you have any issues or suggestions to make, feel free to: 
-- Utilize the https://knowledge.udacity.com/ forum to seek help on content-specific issues. 
-- Submit a support ticket along with the link to your forked repository if (learners are) blocked for other reasons. Here are the links for the [retail consumers](https://udacity.zendesk.com/hc/en-us/requests/new) and [enterprise learners](https://udacityenterprise.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000279131).
