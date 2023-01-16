@@ -14,9 +14,9 @@ Welcome to the Convolutional Neural Networks (CNN) project in the Data Science N
 Along with exploring state-of-the-art CNN models for classification, the notebook will walk through important design decisions about the user experience for the classifier. The notebook looks at multiple approaches to show the strenghs and weakness of different CNNS and gain a better understanding of the data. 
 
 ### Libraries used in the project
-Keras
-Matplotlib
-NumPy
+Keras,
+Matplotlib,
+NumPy,
 OpenCV
 
 ### File descriptions
@@ -26,7 +26,7 @@ OpenCV
 - /images folder: contains images used to test the model.
 
 ### Findings
-The final architecture used transfer learning and VGG19 pre-trained model to achieve an accuracy of approx 80%. 
+The final architecture used transfer learning and Xception pre-trained model to achieve an accuracy of approx 80%. 
 
 ### Conclusion
 The capstone project walks through the implementation of a CNN network. The steps taken to improve our understanding of similar neural networks and ultimately build the final CNN are detailed below:
@@ -149,3 +149,7 @@ When you are ready to submit your project, collect the following files and compr
 - Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
 
 Alternatively, your submission could consist of the GitHub link to your repository.
+
+## Acknowledgement & Sources 
+Credit is given to Udacity for providing the template code and source train and test images used throughout the project.
+
